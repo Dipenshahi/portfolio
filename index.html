@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio with Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="asset/crescent%20on%20Twitter.jpg" alt="Profile Picture" />
+        <h1>Dipen Shahi</h1>
+        <p>Web Developer</p>
+      </div>
+      <nav class="nav-links">
+        <a href="#about" class="active">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am a passionate web developer with 0 experience in building modern websites and applications.</p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Music</li>
+          <li>Web Dev</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>C++</li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <div class="project-item">
+            <h3>Project One</h3>
+            <p>A web application for managing tasks efficiently.</p>
+          </div>
+          <div class="project-item">
+            <h3>Project Two</h3>
+            <p>An website or protfolio with modern UI .</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: Dipenshahi2009@gmail.com</p>
+        <p>Phone: +977 984174865</p>
+        <div class="main">
+          <h1>Email Me</h1>
+          <p>If you'd like to contact me</p>
+          <form action="https://formspree.io/f/manolnvl" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required id="box"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="node.js"></script>
+</body>
+</html>
