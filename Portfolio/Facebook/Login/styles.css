@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    width: 360px;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 40px 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+.login-header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1877f2;
+    font-size: 48px;
+    margin: 0 0 10px 0;
+}
+
+.login-header p {
+    font-size: 14px;
+    color: #606770;
+    margin: 0 0 30px 0;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 100%;
+    background-color: #1877f2;
+    color: white;
+    font-weight: bold;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.login-button:hover {
+    background-color: #165ec9;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #dddfe2;
+    margin: 20px 0;
+}
+
+.create-account-button {
+    width: 100%;
+    background-color: #42b72a;
+    color: white;
+    font-weight: bold;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.create-account-button:hover {
+    background-color: #36a420;
+}

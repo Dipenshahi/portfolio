@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile">
+        <a href="crescent on Twitter.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="crescent on Twitter.jpg" alt="Profile Picture" />
+        </a>
+        <h1>Dipen Shahi</h1>
+        <p>Web Developer</p>
+        <div id="digital-clock" class="digital-clock" role="timer" aria-live="polite" aria-atomic="true" aria-label="Current time"></div>
+      </div>
+      <nav class="nav-links">
+        <a href="#about" class="active">About</a>
+        <a href="#skills">Skills</a>
+        <a href ="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am a passionate web developer with a little experience in building modern websites and applications.</p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Music</li>
+          <li>Web Dev</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>C++</li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <div class="project-item">
+            <h3><a href="Calculator/Calc.html" target="_blank" rel="noopener noreferrer">Calculator</a></h3>
+            <p>A calculator web application.</p>
+          </div>
+          <div class="project-item">
+            <h3><a href="Clock/index.html" target="_blank" rel="noopener noreferrer">CSS Clock</a></h3>
+            <p>A CSS clock web application.</p>
+          </div>
+          <div class="project-item">
+            <h3><a href="Facebook/Login/index.html" target="_blank" rel="noopener noreferrer">Facebook Login</a></h3>
+            <p>Connect with friends and the world around you on Facebook.</p>
+          </div>
+          <div class="project-item">
+            <h3><a href="Facebook/singup/Index.html" target="_blank" rel="noopener noreferrer">Facebook Sign Up</a></h3>
+            <p>Connect with friends and the world around you on Facebook.</p>
+          </div>
+          <div class="project-item">
+            <h3><a href="GuitarTuner/index.html" target="_blank" rel="noopener noreferrer">Guitar tuner</a></h3>
+            <p>A guitar tuner</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="ongoing-projects">
+        <h2>Ongoing Projects</h2>
+        <div class="project-list">
+          <div class="project-item">
+            <h3>Tic Tac Toe</h3>
+            <p>An ongoing project to build a Tic Tac Toe game.</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: dipenshahi2009@gmail.com</p>
+        <p>Contact No: 9828986534</p>
+        <form action="https://formspree.io/f/manolnvl" method="POST" class="contact-form" aria-label="Contact form">
+          <label for="name" class="sr-only">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          <label for="email" class="sr-only">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+          <label for="box" class="sr-only">Your Message</label>
+          <textarea id="box" name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="clock.js"></script>
+  <script src="navActive.js"></script>
+</body>
+</html>

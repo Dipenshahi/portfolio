@@ -1,0 +1,80 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    margin: 0;
+}
+.calculator {
+    background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(176,176,176,0.4);
+    width: 320px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.display {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(145deg, #2c2c2c, #1e1e1e);
+    color: #e0e0e0;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+button {
+    flex: 1 0 21%; /* roughly 4 buttons per row with gaps */
+    height: 60px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #555555, #3a3a3a);
+    color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(136, 136, 136, 0.7);
+}
+button.operator {
+    background: linear-gradient(145deg, #777777, #555555);
+    color: #d0d0d0;
+}
+button.equal {
+    background: linear-gradient(145deg, #3a3a3a, #555555);
+    color: #e0e0e0;
+    flex: 1 0 21%; /* equal button same size as others */
+}
+button.clear {
+    background: linear-gradient(145deg, #5a1a1a, #7a2a2a);
+    color: #e0e0e0;
+}
+button.zero {
+    flex: 1 0 44%; /* zero button spans two columns */
+}
+button:hover {
+    background: linear-gradient(145deg, #3a3a3a, #555555);
+    box-shadow: 0 0 30px rgba(136, 136, 136, 0.9);
+}
+button.operator:hover {
+    background: linear-gradient(145deg, #555555, #777777);
+}
+button.equal:hover {
+    background: linear-gradient(145deg, #555555, #3a3a3a);
+}
+button.clear:hover {
+    background: linear-gradient(145deg, #7a2a2a, #5a1a1a);
+}
